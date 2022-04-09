@@ -153,6 +153,9 @@ input:focus {
 	width: 100px;
 	height: 40px;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .btn-primary {

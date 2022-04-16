@@ -45,7 +45,7 @@ function FeedbackForm() {
 		if (text.trim().length >= 10) {
 			const newFeedback = { text, rating };
 			feedbackEdit.edit
-				? updateFeedback(newFeedback)
+				? updateFeedback(feedbackEdit.item.id, newFeedback)
 				: addFeedback(newFeedback);
 		}
 		setBtnDisabled(true);

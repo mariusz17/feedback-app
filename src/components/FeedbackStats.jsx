@@ -6,12 +6,10 @@ function FeedbackStats() {
 
 	const averageRating = (
 		feedback.reduce((acc, cur) => {
-			return acc + cur.rating;
+			return acc + +cur.rating;
 		}, 0) / feedback.length
 	).toFixed(1);
 
-	// console.log(feedback.reduce((prev, cur) => prev.rating + cur.rating));
-	// console.log(feedback.length);
 	return (
 		<div className="feedback-stats">
 			<h4>{feedback.length} Reviews</h4>
